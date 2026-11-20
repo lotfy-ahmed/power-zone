@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Zone</title>
+  <link rel="icon" type="image/png" href="./images/Neon PZ Power Zone Fitness Badge.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#home"><img src="./images/power-zone-logo.png" alt="Power Zone Fitness Club logo"></a>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation-menu"
+        aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navigation-menu">
+        <li><a href="#home" class="active" id="link-home">Home</a></li>
+        <li><a href="#about" id="link-about">About</a></li>
+        <li><a href="#programs" id="link-programs">Programs</a></li>
+        <li><a href="#membership" id="link-membership">Membership</a></li>
+        <li><a href="#gallery" id="link-gallery">Gallery</a></li>
+        <li><a href="#contact" id="link-contact">Contact</a></li>
+        <li><a href="join.html" class="btn nav-button" id="link-join">Join Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="hero-left">
+        <p class="eyebrow">Power Zone Fitness Club</p>
+        <h1 class="hero-heading">Start your <span>fitness journey</span></h1>
+        <p class="hero-description">Beginner-friendly fitness programs to help you get started on your fitness journey.
+        </p>
+        <a href="#programs" class="btn">View programs</a>
+      </div>
+      <div class="hero-right">
+        <img src="./images/hero-image.png" alt="Power Zone lightning bolt emblem">
+      </div>
+    </section>
+
+    <section id="highlights">
+        <p class="eyebrow">Highlights</p>
+        <div class="slider">
+          <button class="slider-btn" id="prev-btn" type="button">&#8249;</button>
+          <div class="slide">
+            <h3 id="slide-title"></h3>
+            <p id="slide-text"></p>
+          </div>
+          <button class="slider-btn" id="next-btn" type="button">&#8250;</button>
+        </div>
+        <div class="dots" id="slider-dots"></div>
+    </section>
+
+    <section id="about">
+      <div class="about-left">
+        <p class="eyebrow">Why choose us?</p>
+        <h2 class="section-title">More than just a gym</h2>
+        <p class="about-description">Power Zone Fitness Club is a place where you can start your fitness journey with
+          confidence. We offer beginner-friendly programs designed to help you build healthy habits, stay motivated, and
+          train at your own pace.</p>
+        <a href="#programs" class="btn btn-outline">Learn more</a>
+      </div>
+      <div class="about-right">
+        <h3>Our mission</h3>
+        <p>To help beginners start training with confidence and build healthy habits step by step.</p>
+      </div>
+    </section>
+    <section id="programs">
+      <p class="eyebrow">Our programs</p>
+      <h2 class="section-title">Pick your program</h2>
+      <div class="programs-container" id="programs-container"></div>
+    </section>
+    <section id="membership">
+      <div class="membership-head">
+        <p class="eyebrow">Membership</p>
+        <h2 class="membership-title">Choose Your Plan</h2>
+        <p class="membership-sub">Ask us about the available options.</p>
+      </div>
+
+      <div class="plans-grid" id="plans-grid"></div>
+    </section>
+    <section id="gallery">
+      <p class="eyebrow">Gallery</p>
+      <h2 class="section-title">A space built for progress</h2>
+      <div class="slider">
+        <div class="gallery-slide">
+          <img id="gallery-img" src="" alt="">
+          <div id="gallery-caption"></div>
+        </div>
+      </div>
+      <div class="dots" id="gallery-dots"></div>
+    </section>
+    <section id="contact">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Get in touch</h2>
+        </div>
+        <form id="contact-form">
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <p class="error" id="name-error"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <p class="error" id="email-error"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+            <p class="error" id="message-error"></p>
+          </div>
+          <button type="submit" class="btn">Send message</button>
+          <p class="success" id="form-success"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a href="#home" class="footer-brand"><img src="./images/power-zone-logo.png" alt="Power Zone Fitness Club logo"></a>
+    <p>&copy; 2026 Power Zone Fitness Club. All rights reserved.</p>
+    <p>Designed and developed by <span>Lotfy Ahmed</span></p>
+  </footer>
+  <button id="backToTop" type="button">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="m5 15.5 7-7 7 7"></path>
+    </svg>
+  </button>
+  <script src="script.js"></script>
+</body>
+
+</html>
